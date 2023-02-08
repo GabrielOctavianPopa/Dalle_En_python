@@ -22,7 +22,7 @@ print(f"{image_dir}=")
 
 # create an image
 # set the prompt
-prompt = "A giant panda eating white bamboo"
+prompt = "crystal clear lake, mountains in the background, blue sky, green grass, trees"
 
 # call the OpenAI API
 generation_response = openai.Image.create(
