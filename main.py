@@ -22,7 +22,7 @@ print(f"{image_dir}=")
 
 # create an image
 # set the prompt
-prompt = "a photo of cat flying out to space as an astronaut, digital art"
+prompt = "A giant panda eating white bamboo"
 
 # call the OpenAI API
 generation_response = openai.Image.create(
@@ -47,7 +47,8 @@ with open(generated_image_filepath, "wb") as image_file:
 
 # print the image
 print(generated_image_filepath)
-open(generated_image_filepath, "rb")
+im = Image.open(generated_image_filepath)
+im.show()
 
 # # create variations
 # # call the OpenAI API, using `create_variation` rather than `create`
