@@ -7,7 +7,7 @@ from PIL import Image  # used to print and edit images
 from openai.cli import display
 
 # set api key
-openai.api_key = "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"
+openai.api_key = ""
 
 # set a directory to store images to
 image_dir_name = "images"
